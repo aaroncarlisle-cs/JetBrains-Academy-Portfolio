@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Aaron Carlisle - Student / Gamer / Audio Geek</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header id="home">
+        <nav class="navbar">
+            <a href="#about"><strong>About</strong></a>
+            <a href="#portfolio"><strong>Portfolio</strong></a>
+            <a href="#contacts"><strong>Contact</strong></a>
+            <a href="#home"><strong>Home</strong></a>
+        </nav>
+
+
+        <div class="hamburger">
+            <a href="#home"><strong>Aaron Carlisle</strong></a>
+            <a href="javascript:void(0);" class="icon" onclick="burger()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <div id="hamburger-links">
+              <a href="#about"><strong>About</strong></a>
+              <a href="#portfolio"><strong>Portfolio</strong></a>
+              <a href="#contacts"><strong>Contact</strong></a>
+            </div>
+        </div>
+
+
+        <div class="splash">
+            <h1>Aaron Carlisle</h1>
+            <h3>Student / Gamer / Audio Geek</h3>
+        </div>
+    </header>
+
+
+    <section id="about">
+        <img src="img/ac.jpg">
+        <div class="bio">
+            <h2>About me</h2>
+            <p>Hello, my name is Aaron Carlisle. I am a recent graduate from Salt Lake Community College with an AS in
+                Computer Science and Information Systems.</p>
+            <p>I am currently working towards my 4-year B.S. at Western Governors
+                University.</p>
+            <p><strong>Skills:</strong> Java, Python, SQL, HTML5/CSS/JavaScript, PHP, MIPS Assembly</p>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+
+        <!-- Project 1 -->
+        <div>
+            <div>
+                <img src="img/proj1.jpg" class="proj1">
+            </div>
+            <div>
+                <button class="open-window" id="btn1"><p>Mock E-Commerce Site</p></button>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div>
+            <div>
+                <img src="img/proj2.jpg" class="proj2">
+            </div>
+            <div>
+                <button class="open-window" id="btn2"><p>CSIS 1430 Portfolio</p></button>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div>
+            <div>
+                <img src="img/proj3.jpg" class="proj3">
+            </div>
+            <div>
+                <button class="open-window" id="btn3"><p>Pizza Bros</p></button>
+            </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div>
+            <div>
+                <img src="img/proj5.jpg" class="proj5">
+            </div>
+            <div>
+                <button class="open-window" id="btn4"><p>Triage Simulator</p></button>
+            </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div>
+            <div>
+                <img src="img/proj4.jpg" class="proj4">
+            </div>
+            <div>
+                <button class="open-window" id="btn5"><p>Tic Tac Toe</p></button>
+            </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div>
+            <div>
+                <img src="img/proj6.jpg" class="proj6">
+            </div>
+            <div>
+                <button class="open-window" id="btn6"><p>DIY MIDI Controller</p></button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Modal popup window -->
+    <div class="window">
+        <div class="window-box">
+            <h2 id="modalTitle"></h2>
+            <p>Check out my project here: <a href="" id="modalLink"></a></p>
+            <p id="modalDesc"></p>
+            <div>
+                <button class="close">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <section id="contacts">
+        <h2>Contact</h2>
+        <p>
+            <a href="mailto: aaroncarlisle.cs@gmail.com">Email</a>
+        </p>
+        <p>
+            <a href="https://github.com/aaroncarlisle-cs"><img src="img/github.svg"></a>
+            <a href="https://instagram.com/bex_120"><img src="img/instagram.svg"></a>
+            <a href="https://twitter.com/tedricotv"><img src="img/twitter.svg"></a>
+
+        </p>
+    </section>
+
+    <footer class="footer">
+        <p>Aaron Carlisle - 2022</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

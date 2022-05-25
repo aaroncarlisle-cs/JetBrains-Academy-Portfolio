@@ -1,0 +1,222 @@
+* {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif;
+    letter-spacing: 5px; user-select: none; }
+
+header {
+    background-color: #000F12;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    text-decoration: none;
+    color: #DEF7FF;
+    font-weight: 900;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    position: fixed;
+    top: 0;
+    background-color: #000F12;
+    width: 100%;
+}
+nav > a {
+    font-size: 25px;
+    text-decoration: none;
+    text-align: center;
+    transition: opacity 500ms;
+    width: 200px;
+    padding: 10px;
+    color: #DEF7FF;
+    background-color: #000F12;
+}
+
+nav a:hover {
+    background-color: #CCD1D3;
+    color: black;
+}
+
+.splash {
+    padding-top: 25%;
+    background-image: url("../img/bg1.jpeg");
+    background-size: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    flex-direction: column;
+}
+.splash > h1, .splash > h3 {
+    margin-left: 12%;
+    color: #DEF7FF;
+    background-color: transparent;
+}
+
+#about {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    padding: 5% 15%;
+    justify-content: center;;
+    font-size: 20px;
+    line-height: 1.5;
+
+}
+#about > img {
+    height: 35%;
+    width: 35%;
+    border: 2px outset black;
+}
+.bio {
+    padding-left: 5%;
+    flex-direction: column;
+}
+
+.bio > p {
+    margin: 20px auto;
+}
+#portfolio {
+    display: flex;
+    margin: 0px auto;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 5%;
+    font-size: 20px;
+    line-height: 1.5;
+    flex-wrap: wrap;
+    text-align: center;
+}
+#portfolio > h2{
+    min-width: 100%;
+    padding: 20px;
+}
+#portfolio > div {
+    flex-direction: column;
+    height: 50%;
+    width: auto;
+    padding: 20px;
+}
+.proj1, .proj2, .proj3, .proj4, .proj5, .proj6 {
+    height: 250px;
+    width: auto;
+    border: 2px outset black;
+}
+
+#contacts {
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+    justify-content: center;
+    align-items: center;
+}
+#contacts > p > a > img {
+    margin: 15px 10px;
+}
+
+footer {
+    font-size: 14px;
+    text-align: center;
+    background-color: #000F12;
+    color: #DEF7FF;
+    padding: 10px;
+}
+.window {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.window-box {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 3px outset #000F12;
+}
+.window-box > h2 {
+   text-align: center;
+    margin: 3%;
+}
+.window-box > p {
+    margin: 14px 50px;
+}
+.window-box > div {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+button {
+    margin-top: 10px;
+    padding: 7px;
+    background-color: #CCD1D3;
+    color: black;
+    font-weight: 900;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #000F12;
+    color: #DEF7FF;
+    border: 1px solid #000F12;
+    cursor: pointer;
+}
+
+.window-box > div> button {
+    width: 10%;
+    margin-bottom: 30px
+}
+.hamburger a{
+    background-color: #000F12;
+    color: #DEF7FF;
+    padding: 2%;
+    font-size: 25px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+}
+.hamburger a:hover {
+    background-color: #CCD1D3;
+    color: black;
+}
+#hamburger-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 801px) {
+    .hamburger { display: none; }
+}
+@media only screen and (max-width: 1000px) {
+    .splash {height: 100%;}
+    .splash > h1, .splash > h3 {display: none;}
+}
+@media only screen and (max-width: 800px) {
+    .navbar {display: none; }
+    .hamburger a.icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .hamburger a.icon:hover {
+        background-color: #CCD1D3;
+        color: black;
+    }
+    .splash {display: none;}
+    #about {flex-direction: column;
+    justify-content: center;
+    }
+    #about > img {width: 100%;}
+    .bio {padding: 5% 0%;}
+}
+
